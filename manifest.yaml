@@ -9,6 +9,11 @@ nginx:
   image: nginx:latest
   port: 8080
   proxy_timeout: 30
+  contact: ops@swiftdeploy.local
+
+opa:
+  image: openpolicyagent/opa:latest
+  port: 8181
 
 network:
   name: swiftdeploy-net
